@@ -24,8 +24,8 @@ try:
     from Utils.process_generator import ProcessGenerator
     from UI.results_display import ResultsDisplay
 except ImportError as e:
-    print(f"❌ Error de importación: {e}")
-    print("📂 Verifique que tenga los archivos __init__.py en cada carpeta")
+    print(f"Error de importación: {e}")
+    print("Verifique que tenga los archivos __init__.py en cada carpeta")
     input("Presiona Enter para salir...")
     sys.exit(1)
 
@@ -67,14 +67,14 @@ class CPUSchedulerInterface:
             print("MENÚ PRINCIPAL")
             print("="*70)
             
-            print("\n1. 📂 Cargar procesos desde archivo")
-            print("2. ✏️  Crear procesos manualmente")
-            print("3. 🧪 Usar casos de prueba predefinidos")
-            print("4. 🚀 Ejecutar simulación")
-            print("5. 📊 Comparar todos los algoritmos")
-            print("6. 📜 Ver historial de resultados")
-            print("7. ⚙️  Configurar parámetros")
-            print("8. ❌ Salir")
+            print("\n1. Cargar procesos desde archivo")
+            print("2. Crear procesos manualmente")
+            print("3. Usar casos de prueba predefinidos")
+            print("4. Ejecutar simulación")
+            print("5. Comparar todos los algoritmos")
+            print("6. Ver historial de resultados")
+            print("7. Configurar parámetros")
+            print("8. Salir")
             
             print("\n" + "="*70)
             
@@ -98,7 +98,7 @@ class CPUSchedulerInterface:
                 print("\n¡Gracias por usar el simulador!")
                 sys.exit(0)
             else:
-                print("\n❌ Opción inválida. Debe ser un número del 1 al 8.")
+                print("\nOpción inválida. Debe ser un número del 1 al 8.")
                 input("Presione Enter para continuar...")
     
     def load_from_file(self):
@@ -118,17 +118,17 @@ class CPUSchedulerInterface:
                     if f.endswith(('.json', '.txt', '.csv')) and f != "simulation_history.json"]
         
         if not files:
-            print("\n⚠️  No hay archivos en la carpeta 'data/'.")
+            print("\nNo hay archivos en la carpeta 'data'.")
             print("   Use la opción 3 (Casos de prueba) o")
             print("   ejecute 'crear_datos.py' para generar archivos.")
             input("\nPresione Enter para continuar...")
             return
         
-        print("\n📁 Archivos disponibles en 'data/':")
+        print("\nArchivos disponibles en 'data/':")
         for i, file in enumerate(files, 1):
             print(f"   {i}. {file}")
         
-        print("\n💡 Puede ingresar:")
+        print("\nPuede ingresar:")
         print("   - Número del archivo (ej: 1)")
         print("   - Nombre completo (ej: conjunto1.json)")
         
@@ -140,7 +140,7 @@ class CPUSchedulerInterface:
             if 1 <= num <= len(files):
                 filename = files[num - 1]
             else:
-                print(f"\n❌ Número fuera de rango (1-{len(files)})")
+                print(f"\nNúmero fuera de rango (1-{len(files)})")
                 input("Presione Enter para continuar...")
                 return
         else:
@@ -152,10 +152,10 @@ class CPUSchedulerInterface:
         
         try:
             self.processes = self.file_handler.load_processes(filename)
-            print(f"\n✅ Cargados {len(self.processes)} procesos exitosamente.")
+            print(f"\nCargados {len(self.processes)} procesos exitosamente.")
             
             # Mostrar procesos cargados
-            print("\n📋 Procesos cargados:")
+            print("\nProcesos cargados:")
             print("-"*60)
             print(f"{'PID':<5} {'Llegada':<8} {'Ráfaga':<8} {'Prioridad':<10}")
             print("-"*60)
@@ -168,10 +168,10 @@ class CPUSchedulerInterface:
                 self.run_simulation()
         
         except FileNotFoundError:
-            print(f"\n❌ Archivo no encontrado: {filename}")
+            print(f"\nArchivo no encontrado: {filename}")
             print("   Asegúrese de que el archivo esté en la carpeta 'data/'")
         except Exception as e:
-            print(f"\n❌ Error al cargar archivo: {e}")
+            print(f"\nError al cargar archivo: {e}")
         
         input("\nPresione Enter para continuar...")
     
@@ -204,7 +204,7 @@ class CPUSchedulerInterface:
                 Process("P3", 2, 9, 4),
                 Process("P4", 3, 5, 2)
             ]
-            print("\n✅ Conjunto 1 cargado (4 procesos)")
+            print("\nConjunto 1 cargado (4 procesos)")
             
         elif choice == "2":
             self.processes = [
@@ -214,7 +214,7 @@ class CPUSchedulerInterface:
                 Process("P4", 6, 1, 1),
                 Process("P5", 8, 4, 2)
             ]
-            print("\n✅ Conjunto 2 cargado (5 procesos)")
+            print("\nConjunto 2 cargado (5 procesos)")
             
         elif choice == "3":
             self.processes = [
@@ -225,22 +225,22 @@ class CPUSchedulerInterface:
                 Process("P5", 6, 3, 4),
                 Process("P6", 8, 6, 2)
             ]
-            print("\n✅ Conjunto 3 cargado (6 procesos)")
+            print("\nConjunto 3 cargado (6 procesos)")
             
         elif choice == "4":
             try:
                 num_processes = int(input("Número de procesos a generar (4-10): "))
                 if 4 <= num_processes <= 10:
                     self.processes = self.process_generator.generate_random_processes(num_processes)
-                    print(f"\n✅ {num_processes} procesos aleatorios generados")
+                    print(f"\n{num_processes} procesos aleatorios generados")
                 else:
-                    print("❌ Número debe estar entre 4 y 10. Generando 6 procesos.")
+                    print("Número debe estar entre 4 y 10. Generando 6 procesos.")
                     self.processes = self.process_generator.generate_random_processes(6)
             except ValueError:
-                print("❌ Valor inválido. Generando 6 procesos.")
+                print("Valor inválido. Generando 6 procesos.")
                 self.processes = self.process_generator.generate_random_processes(6)
         else:
-            print("❌ Opción inválida, usando Conjunto 1 por defecto")
+            print("Opción inválida, usando Conjunto 1 por defecto")
             self.processes = [
                 Process("P1", 0, 8, 3),
                 Process("P2", 1, 4, 1),
@@ -249,7 +249,7 @@ class CPUSchedulerInterface:
             ]
         
         # Mostrar procesos cargados
-        print("\n📋 Procesos cargados:")
+        print("\nProcesos cargados:")
         self.show_processes()
         
         # Preguntar si ejecutar simulación inmediatamente

@@ -1,16 +1,2 @@
-
-## 🚀 Instalación y Ejecución
-
-### Requisitos:
-- Python 3.6 o superior
-- Sistema operativo: Windows, Linux o macOS
-
-### Ejecución rápida:
-```bash
-# 1. Clonar o descargar el proyecto
-# 2. Navegar al directorio del proyecto
-cd SIMULADOR_DE_PLANIFICACION
-
-# 3. Ejecutar (opciones):
-python run.py           # RECOMENDADO - Configura automáticamente
-python main.py          # Alternativa principal
+textual>=0.40.0
+rich>=13.0.0

@@ -30,7 +30,7 @@ class PriorityScheduler(Scheduler):
         completed = 0
         
         print(f"\n{'='*60}")
-        print(f"🚀 Ejecutando {self.name}")
+        print(f"Ejecutando {self.name}")
         print(f"{'='*60}")
         
         while completed < n:
@@ -82,7 +82,7 @@ class PriorityScheduler(Scheduler):
         n = len(self.processes)
         
         print(f"\n{'='*60}")
-        print(f"🚀 Ejecutando {self.name}")
+        print(f"Ejecutando {self.name}")
         print(f"{'='*60}")
         
         current_process = None

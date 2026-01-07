@@ -26,7 +26,7 @@ class SJF(Scheduler):
             p.remaining_time = p.burst_time
         
         print(f"\n{'='*60}")
-        print(f"🚀 Ejecutando {self.name}")
+        print(f"Ejecutando {self.name}")
         print(f"{'='*60}")
         
         while completed < n:

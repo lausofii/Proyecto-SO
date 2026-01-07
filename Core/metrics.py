@@ -68,7 +68,7 @@ class MetricsCalculator:
             return
         
         print("\n" + "="*80)
-        print("📊 MÉTRICAS DE RENDIMIENTO")
+        print("METRICAS DE RENDIMIENTO")
         print("="*80)
         
         print("\n--- Métricas por Proceso ---")
@@ -84,9 +84,9 @@ class MetricsCalculator:
         
         print("\n--- Métricas del Sistema ---")
         system = metrics["system"]
-        print(f"📈 Tiempo Promedio de Retorno: {system['avg_turnaround']}")
-        print(f"⏱️  Tiempo Promedio de Espera:   {system['avg_waiting']}")
-        print(f"⚡ Tiempo Promedio de Respuesta: {system['avg_response']}")
-        print(f"💻 Utilización de CPU:          {system['cpu_utilization']}%")
-        print(f"📦 Throughput:                  {system['throughput']} procesos/ut")
+        print(f"Tiempo Promedio de Retorno: {system['avg_turnaround']}")
+        print(f"Tiempo Promedio de Espera:   {system['avg_waiting']}")
+        print(f"Tiempo Promedio de Respuesta: {system['avg_response']}")
+        print(f"Utilización de CPU:          {system['cpu_utilization']}%")
+        print(f"Throughput:                  {system['throughput']} procesos/ut")
         print("="*80)

@@ -37,7 +37,7 @@ class RoundRobin(Scheduler):
         n = len(self.processes)
         
         print(f"\n{'='*60}")
-        print(f"🚀 Ejecutando {self.name}")
+        print(f"Ejecutando {self.name}")
         print(f"{'='*60}")
         
         while len(self.completed_processes) < n:
