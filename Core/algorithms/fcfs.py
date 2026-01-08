@@ -20,7 +20,7 @@ class FCFS(Scheduler):
         self.gantt_chart = []
         
         print(f"\n{'='*60}")
-        print(f"🚀 Ejecutando {self.name}")
+        print(f"Ejecutando {self.name}")
         print(f"{'='*60}")
         
         # Procesar cada proceso en orden de llegada

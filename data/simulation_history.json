@@ -164,5 +164,2674 @@
         "duration": 9
       }
     ]
+  },
+  {
+    "timestamp": "2026-01-05T22:31:43.233122",
+    "algorithm": "First Come First Served (FCFS)",
+    "process_count": 4,
+    "total_time": 26,
+    "metrics": {
+      "per_process": [
+        {
+          "pid": "P1",
+          "arrival_time": 0,
+          "burst_time": 8,
+          "priority": 3,
+          "completion_time": 8,
+          "turnaround_time": 8,
+          "waiting_time": 0,
+          "response_time": 0
+        },
+        {
+          "pid": "P2",
+          "arrival_time": 1,
+          "burst_time": 4,
+          "priority": 1,
+          "completion_time": 12,
+          "turnaround_time": 11,
+          "waiting_time": 7,
+          "response_time": 7
+        },
+        {
+          "pid": "P3",
+          "arrival_time": 2,
+          "burst_time": 9,
+          "priority": 4,
+          "completion_time": 21,
+          "turnaround_time": 19,
+          "waiting_time": 10,
+          "response_time": 10
+        },
+        {
+          "pid": "P4",
+          "arrival_time": 3,
+          "burst_time": 5,
+          "priority": 2,
+          "completion_time": 26,
+          "turnaround_time": 23,
+          "waiting_time": 18,
+          "response_time": 18
+        }
+      ],
+      "system": {
+        "avg_turnaround": 15.25,
+        "avg_waiting": 8.75,
+        "avg_response": 8.75,
+        "cpu_utilization": 100.0,
+        "throughput": 0.154
+      }
+    },
+    "gantt_chart": [
+      {
+        "process_id": "P1",
+        "start": 0,
+        "end": 8,
+        "duration": 8
+      },
+      {
+        "process_id": "P2",
+        "start": 8,
+        "end": 12,
+        "duration": 4
+      },
+      {
+        "process_id": "P3",
+        "start": 12,
+        "end": 21,
+        "duration": 9
+      },
+      {
+        "process_id": "P4",
+        "start": 21,
+        "end": 26,
+        "duration": 5
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-01-05T22:36:06.642340",
+    "algorithm": "First Come First Served (FCFS)",
+    "process_count": 5,
+    "total_time": 24,
+    "metrics": {
+      "per_process": [
+        {
+          "pid": "P1",
+          "arrival_time": 0,
+          "burst_time": 10,
+          "priority": 2,
+          "completion_time": 10,
+          "turnaround_time": 10,
+          "waiting_time": 0,
+          "response_time": 0
+        },
+        {
+          "pid": "P2",
+          "arrival_time": 2,
+          "burst_time": 3,
+          "priority": 1,
+          "completion_time": 13,
+          "turnaround_time": 11,
+          "waiting_time": 8,
+          "response_time": 8
+        },
+        {
+          "pid": "P3",
+          "arrival_time": 4,
+          "burst_time": 6,
+          "priority": 3,
+          "completion_time": 19,
+          "turnaround_time": 15,
+          "waiting_time": 9,
+          "response_time": 9
+        },
+        {
+          "pid": "P4",
+          "arrival_time": 6,
+          "burst_time": 1,
+          "priority": 1,
+          "completion_time": 20,
+          "turnaround_time": 14,
+          "waiting_time": 13,
+          "response_time": 13
+        },
+        {
+          "pid": "P5",
+          "arrival_time": 8,
+          "burst_time": 4,
+          "priority": 2,
+          "completion_time": 24,
+          "turnaround_time": 16,
+          "waiting_time": 12,
+          "response_time": 12
+        }
+      ],
+      "system": {
+        "avg_turnaround": 13.2,
+        "avg_waiting": 8.4,
+        "avg_response": 8.4,
+        "cpu_utilization": 100.0,
+        "throughput": 0.208
+      }
+    },
+    "gantt_chart": [
+      {
+        "process_id": "P1",
+        "start": 0,
+        "end": 10,
+        "duration": 10
+      },
+      {
+        "process_id": "P2",
+        "start": 10,
+        "end": 13,
+        "duration": 3
+      },
+      {
+        "process_id": "P3",
+        "start": 13,
+        "end": 19,
+        "duration": 6
+      },
+      {
+        "process_id": "P4",
+        "start": 19,
+        "end": 20,
+        "duration": 1
+      },
+      {
+        "process_id": "P5",
+        "start": 20,
+        "end": 24,
+        "duration": 4
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-01-05T22:37:45.630923",
+    "algorithm": "Shortest Job First (SJF) - No apropiativo",
+    "process_count": 5,
+    "total_time": 24,
+    "metrics": {
+      "per_process": [
+        {
+          "pid": "P1",
+          "arrival_time": 0,
+          "burst_time": 10,
+          "priority": 2,
+          "completion_time": 10,
+          "turnaround_time": 10,
+          "waiting_time": 0,
+          "response_time": 0
+        },
+        {
+          "pid": "P4",
+          "arrival_time": 6,
+          "burst_time": 1,
+          "priority": 1,
+          "completion_time": 11,
+          "turnaround_time": 5,
+          "waiting_time": 4,
+          "response_time": 4
+        },
+        {
+          "pid": "P2",
+          "arrival_time": 2,
+          "burst_time": 3,
+          "priority": 1,
+          "completion_time": 14,
+          "turnaround_time": 12,
+          "waiting_time": 9,
+          "response_time": 9
+        },
+        {
+          "pid": "P5",
+          "arrival_time": 8,
+          "burst_time": 4,
+          "priority": 2,
+          "completion_time": 18,
+          "turnaround_time": 10,
+          "waiting_time": 6,
+          "response_time": 6
+        },
+        {
+          "pid": "P3",
+          "arrival_time": 4,
+          "burst_time": 6,
+          "priority": 3,
+          "completion_time": 24,
+          "turnaround_time": 20,
+          "waiting_time": 14,
+          "response_time": 14
+        }
+      ],
+      "system": {
+        "avg_turnaround": 11.4,
+        "avg_waiting": 6.6,
+        "avg_response": 6.6,
+        "cpu_utilization": 100.0,
+        "throughput": 0.208
+      }
+    },
+    "gantt_chart": [
+      {
+        "process_id": "P1",
+        "start": 0,
+        "end": 10,
+        "duration": 10
+      },
+      {
+        "process_id": "P4",
+        "start": 10,
+        "end": 11,
+        "duration": 1
+      },
+      {
+        "process_id": "P2",
+        "start": 11,
+        "end": 14,
+        "duration": 3
+      },
+      {
+        "process_id": "P5",
+        "start": 14,
+        "end": 18,
+        "duration": 4
+      },
+      {
+        "process_id": "P3",
+        "start": 18,
+        "end": 24,
+        "duration": 6
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-01-05T22:39:24.337119",
+    "algorithm": "Priority Scheduling (sin desalojo)",
+    "process_count": 5,
+    "total_time": 24,
+    "metrics": {
+      "per_process": [
+        {
+          "pid": "P1",
+          "arrival_time": 0,
+          "burst_time": 10,
+          "priority": 2,
+          "completion_time": 10,
+          "turnaround_time": 10,
+          "waiting_time": 0,
+          "response_time": 0
+        },
+        {
+          "pid": "P2",
+          "arrival_time": 2,
+          "burst_time": 3,
+          "priority": 1,
+          "completion_time": 13,
+          "turnaround_time": 11,
+          "waiting_time": 8,
+          "response_time": 8
+        },
+        {
+          "pid": "P4",
+          "arrival_time": 6,
+          "burst_time": 1,
+          "priority": 1,
+          "completion_time": 14,
+          "turnaround_time": 8,
+          "waiting_time": 7,
+          "response_time": 7
+        },
+        {
+          "pid": "P5",
+          "arrival_time": 8,
+          "burst_time": 4,
+          "priority": 2,
+          "completion_time": 18,
+          "turnaround_time": 10,
+          "waiting_time": 6,
+          "response_time": 6
+        },
+        {
+          "pid": "P3",
+          "arrival_time": 4,
+          "burst_time": 6,
+          "priority": 3,
+          "completion_time": 24,
+          "turnaround_time": 20,
+          "waiting_time": 14,
+          "response_time": 14
+        }
+      ],
+      "system": {
+        "avg_turnaround": 11.8,
+        "avg_waiting": 7.0,
+        "avg_response": 7.0,
+        "cpu_utilization": 100.0,
+        "throughput": 0.208
+      }
+    },
+    "gantt_chart": [
+      {
+        "process_id": "P1",
+        "start": 0,
+        "end": 10,
+        "duration": 10
+      },
+      {
+        "process_id": "P2",
+        "start": 10,
+        "end": 13,
+        "duration": 3
+      },
+      {
+        "process_id": "P4",
+        "start": 13,
+        "end": 14,
+        "duration": 1
+      },
+      {
+        "process_id": "P5",
+        "start": 14,
+        "end": 18,
+        "duration": 4
+      },
+      {
+        "process_id": "P3",
+        "start": 18,
+        "end": 24,
+        "duration": 6
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-01-05T22:42:25.544363",
+    "algorithm": "Shortest Job First (SJF) - No apropiativo",
+    "process_count": 6,
+    "total_time": 34,
+    "metrics": {
+      "per_process": [
+        {
+          "pid": "P1",
+          "arrival_time": 0,
+          "burst_time": 7,
+          "priority": 1,
+          "completion_time": 7,
+          "turnaround_time": 7,
+          "waiting_time": 0,
+          "response_time": 0
+        },
+        {
+          "pid": "P5",
+          "arrival_time": 6,
+          "burst_time": 3,
+          "priority": 4,
+          "completion_time": 10,
+          "turnaround_time": 4,
+          "waiting_time": 1,
+          "response_time": 1
+        },
+        {
+          "pid": "P2",
+          "arrival_time": 2,
+          "burst_time": 4,
+          "priority": 3,
+          "completion_time": 14,
+          "turnaround_time": 12,
+          "waiting_time": 8,
+          "response_time": 8
+        },
+        {
+          "pid": "P4",
+          "arrival_time": 5,
+          "burst_time": 5,
+          "priority": 1,
+          "completion_time": 19,
+          "turnaround_time": 14,
+          "waiting_time": 9,
+          "response_time": 9
+        },
+        {
+          "pid": "P6",
+          "arrival_time": 8,
+          "burst_time": 6,
+          "priority": 2,
+          "completion_time": 25,
+          "turnaround_time": 17,
+          "waiting_time": 11,
+          "response_time": 11
+        },
+        {
+          "pid": "P3",
+          "arrival_time": 3,
+          "burst_time": 9,
+          "priority": 2,
+          "completion_time": 34,
+          "turnaround_time": 31,
+          "waiting_time": 22,
+          "response_time": 22
+        }
+      ],
+      "system": {
+        "avg_turnaround": 14.17,
+        "avg_waiting": 8.5,
+        "avg_response": 8.5,
+        "cpu_utilization": 100.0,
+        "throughput": 0.176
+      }
+    },
+    "gantt_chart": [
+      {
+        "process_id": "P1",
+        "start": 0,
+        "end": 7,
+        "duration": 7
+      },
+      {
+        "process_id": "P5",
+        "start": 7,
+        "end": 10,
+        "duration": 3
+      },
+      {
+        "process_id": "P2",
+        "start": 10,
+        "end": 14,
+        "duration": 4
+      },
+      {
+        "process_id": "P4",
+        "start": 14,
+        "end": 19,
+        "duration": 5
+      },
+      {
+        "process_id": "P6",
+        "start": 19,
+        "end": 25,
+        "duration": 6
+      },
+      {
+        "process_id": "P3",
+        "start": 25,
+        "end": 34,
+        "duration": 9
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-01-05T22:46:56.533295",
+    "algorithm": "Round Robin (Quantum=4)",
+    "process_count": 5,
+    "total_time": 24,
+    "metrics": {
+      "per_process": [
+        {
+          "pid": "P2",
+          "arrival_time": 2,
+          "burst_time": 3,
+          "priority": 1,
+          "completion_time": 7,
+          "turnaround_time": 5,
+          "waiting_time": 2,
+          "response_time": 2
+        },
+        {
+          "pid": "P4",
+          "arrival_time": 6,
+          "burst_time": 1,
+          "priority": 1,
+          "completion_time": 16,
+          "turnaround_time": 10,
+          "waiting_time": 9,
+          "response_time": 9
+        },
+        {
+          "pid": "P5",
+          "arrival_time": 8,
+          "burst_time": 4,
+          "priority": 2,
+          "completion_time": 20,
+          "turnaround_time": 12,
+          "waiting_time": 8,
+          "response_time": 8
+        },
+        {
+          "pid": "P3",
+          "arrival_time": 4,
+          "burst_time": 6,
+          "priority": 3,
+          "completion_time": 22,
+          "turnaround_time": 18,
+          "waiting_time": 12,
+          "response_time": 3
+        },
+        {
+          "pid": "P1",
+          "arrival_time": 0,
+          "burst_time": 10,
+          "priority": 2,
+          "completion_time": 24,
+          "turnaround_time": 24,
+          "waiting_time": 14,
+          "response_time": 0
+        }
+      ],
+      "system": {
+        "avg_turnaround": 13.8,
+        "avg_waiting": 9.0,
+        "avg_response": 4.4,
+        "cpu_utilization": 100.0,
+        "throughput": 0.208
+      }
+    },
+    "gantt_chart": [
+      {
+        "process_id": "P1",
+        "start": 0,
+        "end": 4,
+        "duration": 4
+      },
+      {
+        "process_id": "P2",
+        "start": 4,
+        "end": 7,
+        "duration": 3
+      },
+      {
+        "process_id": "P3",
+        "start": 7,
+        "end": 11,
+        "duration": 4
+      },
+      {
+        "process_id": "P1",
+        "start": 11,
+        "end": 15,
+        "duration": 4
+      },
+      {
+        "process_id": "P4",
+        "start": 15,
+        "end": 16,
+        "duration": 1
+      },
+      {
+        "process_id": "P5",
+        "start": 16,
+        "end": 20,
+        "duration": 4
+      },
+      {
+        "process_id": "P3",
+        "start": 20,
+        "end": 22,
+        "duration": 2
+      },
+      {
+        "process_id": "P1",
+        "start": 22,
+        "end": 24,
+        "duration": 2
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-01-05T22:48:16.593412",
+    "algorithm": "Priority Scheduling (sin desalojo)",
+    "process_count": 6,
+    "total_time": 46,
+    "metrics": {
+      "per_process": [
+        {
+          "pid": "P5",
+          "arrival_time": 0,
+          "burst_time": 3,
+          "priority": 4,
+          "completion_time": 3,
+          "turnaround_time": 3,
+          "waiting_time": 0,
+          "response_time": 0
+        },
+        {
+          "pid": "P1",
+          "arrival_time": 2,
+          "burst_time": 11,
+          "priority": 1,
+          "completion_time": 14,
+          "turnaround_time": 12,
+          "waiting_time": 1,
+          "response_time": 1
+        },
+        {
+          "pid": "P2",
+          "arrival_time": 6,
+          "burst_time": 2,
+          "priority": 1,
+          "completion_time": 16,
+          "turnaround_time": 10,
+          "waiting_time": 8,
+          "response_time": 8
+        },
+        {
+          "pid": "P3",
+          "arrival_time": 10,
+          "burst_time": 7,
+          "priority": 1,
+          "completion_time": 23,
+          "turnaround_time": 13,
+          "waiting_time": 6,
+          "response_time": 6
+        },
+        {
+          "pid": "P6",
+          "arrival_time": 0,
+          "burst_time": 14,
+          "priority": 5,
+          "completion_time": 37,
+          "turnaround_time": 37,
+          "waiting_time": 23,
+          "response_time": 23
+        },
+        {
+          "pid": "P4",
+          "arrival_time": 6,
+          "burst_time": 9,
+          "priority": 5,
+          "completion_time": 46,
+          "turnaround_time": 40,
+          "waiting_time": 31,
+          "response_time": 31
+        }
+      ],
+      "system": {
+        "avg_turnaround": 19.17,
+        "avg_waiting": 11.5,
+        "avg_response": 11.5,
+        "cpu_utilization": 100.0,
+        "throughput": 0.13
+      }
+    },
+    "gantt_chart": [
+      {
+        "process_id": "P5",
+        "start": 0,
+        "end": 3,
+        "duration": 3
+      },
+      {
+        "process_id": "P1",
+        "start": 3,
+        "end": 14,
+        "duration": 11
+      },
+      {
+        "process_id": "P2",
+        "start": 14,
+        "end": 16,
+        "duration": 2
+      },
+      {
+        "process_id": "P3",
+        "start": 16,
+        "end": 23,
+        "duration": 7
+      },
+      {
+        "process_id": "P6",
+        "start": 23,
+        "end": 37,
+        "duration": 14
+      },
+      {
+        "process_id": "P4",
+        "start": 37,
+        "end": 46,
+        "duration": 9
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-01-05T22:54:28.572977",
+    "algorithm": "Round Robin (Quantum=3)",
+    "process_count": 4,
+    "total_time": 26,
+    "metrics": {
+      "per_process": [
+        {
+          "pid": "P2",
+          "arrival_time": 1,
+          "burst_time": 4,
+          "priority": 1,
+          "completion_time": 16,
+          "turnaround_time": 15,
+          "waiting_time": 11,
+          "response_time": 2
+        },
+        {
+          "pid": "P4",
+          "arrival_time": 3,
+          "burst_time": 5,
+          "priority": 2,
+          "completion_time": 21,
+          "turnaround_time": 18,
+          "waiting_time": 13,
+          "response_time": 6
+        },
+        {
+          "pid": "P1",
+          "arrival_time": 0,
+          "burst_time": 8,
+          "priority": 3,
+          "completion_time": 23,
+          "turnaround_time": 23,
+          "waiting_time": 15,
+          "response_time": 0
+        },
+        {
+          "pid": "P3",
+          "arrival_time": 2,
+          "burst_time": 9,
+          "priority": 4,
+          "completion_time": 26,
+          "turnaround_time": 24,
+          "waiting_time": 15,
+          "response_time": 4
+        }
+      ],
+      "system": {
+        "avg_turnaround": 20.0,
+        "avg_waiting": 13.5,
+        "avg_response": 3.0,
+        "cpu_utilization": 100.0,
+        "throughput": 0.154
+      }
+    },
+    "gantt_chart": [
+      {
+        "process_id": "P1",
+        "start": 0,
+        "end": 3,
+        "duration": 3
+      },
+      {
+        "process_id": "P2",
+        "start": 3,
+        "end": 6,
+        "duration": 3
+      },
+      {
+        "process_id": "P3",
+        "start": 6,
+        "end": 9,
+        "duration": 3
+      },
+      {
+        "process_id": "P4",
+        "start": 9,
+        "end": 12,
+        "duration": 3
+      },
+      {
+        "process_id": "P1",
+        "start": 12,
+        "end": 15,
+        "duration": 3
+      },
+      {
+        "process_id": "P2",
+        "start": 15,
+        "end": 16,
+        "duration": 1
+      },
+      {
+        "process_id": "P3",
+        "start": 16,
+        "end": 19,
+        "duration": 3
+      },
+      {
+        "process_id": "P4",
+        "start": 19,
+        "end": 21,
+        "duration": 2
+      },
+      {
+        "process_id": "P1",
+        "start": 21,
+        "end": 23,
+        "duration": 2
+      },
+      {
+        "process_id": "P3",
+        "start": 23,
+        "end": 26,
+        "duration": 3
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-01-05T23:00:03.069131",
+    "algorithm": "First Come First Served (FCFS)",
+    "process_count": 4,
+    "total_time": 26,
+    "metrics": {
+      "per_process": [
+        {
+          "pid": "P1",
+          "arrival_time": 0,
+          "burst_time": 8,
+          "priority": 3,
+          "completion_time": 8,
+          "turnaround_time": 8,
+          "waiting_time": 0,
+          "response_time": 0
+        },
+        {
+          "pid": "P2",
+          "arrival_time": 1,
+          "burst_time": 4,
+          "priority": 1,
+          "completion_time": 12,
+          "turnaround_time": 11,
+          "waiting_time": 7,
+          "response_time": 7
+        },
+        {
+          "pid": "P3",
+          "arrival_time": 2,
+          "burst_time": 9,
+          "priority": 4,
+          "completion_time": 21,
+          "turnaround_time": 19,
+          "waiting_time": 10,
+          "response_time": 10
+        },
+        {
+          "pid": "P4",
+          "arrival_time": 3,
+          "burst_time": 5,
+          "priority": 2,
+          "completion_time": 26,
+          "turnaround_time": 23,
+          "waiting_time": 18,
+          "response_time": 18
+        }
+      ],
+      "system": {
+        "avg_turnaround": 15.25,
+        "avg_waiting": 8.75,
+        "avg_response": 8.75,
+        "cpu_utilization": 100.0,
+        "throughput": 0.154
+      }
+    },
+    "gantt_chart": [
+      {
+        "process_id": "P1",
+        "start": 0,
+        "end": 8,
+        "duration": 8
+      },
+      {
+        "process_id": "P2",
+        "start": 8,
+        "end": 12,
+        "duration": 4
+      },
+      {
+        "process_id": "P3",
+        "start": 12,
+        "end": 21,
+        "duration": 9
+      },
+      {
+        "process_id": "P4",
+        "start": 21,
+        "end": 26,
+        "duration": 5
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-01-05T23:00:05.978471",
+    "algorithm": "Shortest Job First (SJF) - No apropiativo",
+    "process_count": 4,
+    "total_time": 26,
+    "metrics": {
+      "per_process": [
+        {
+          "pid": "P1",
+          "arrival_time": 0,
+          "burst_time": 8,
+          "priority": 3,
+          "completion_time": 8,
+          "turnaround_time": 8,
+          "waiting_time": 0,
+          "response_time": 0
+        },
+        {
+          "pid": "P2",
+          "arrival_time": 1,
+          "burst_time": 4,
+          "priority": 1,
+          "completion_time": 12,
+          "turnaround_time": 11,
+          "waiting_time": 7,
+          "response_time": 7
+        },
+        {
+          "pid": "P4",
+          "arrival_time": 3,
+          "burst_time": 5,
+          "priority": 2,
+          "completion_time": 17,
+          "turnaround_time": 14,
+          "waiting_time": 9,
+          "response_time": 9
+        },
+        {
+          "pid": "P3",
+          "arrival_time": 2,
+          "burst_time": 9,
+          "priority": 4,
+          "completion_time": 26,
+          "turnaround_time": 24,
+          "waiting_time": 15,
+          "response_time": 15
+        }
+      ],
+      "system": {
+        "avg_turnaround": 14.25,
+        "avg_waiting": 7.75,
+        "avg_response": 7.75,
+        "cpu_utilization": 100.0,
+        "throughput": 0.154
+      }
+    },
+    "gantt_chart": [
+      {
+        "process_id": "P1",
+        "start": 0,
+        "end": 8,
+        "duration": 8
+      },
+      {
+        "process_id": "P2",
+        "start": 8,
+        "end": 12,
+        "duration": 4
+      },
+      {
+        "process_id": "P4",
+        "start": 12,
+        "end": 17,
+        "duration": 5
+      },
+      {
+        "process_id": "P3",
+        "start": 17,
+        "end": 26,
+        "duration": 9
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-01-05T23:00:13.355745",
+    "algorithm": "Round Robin (Quantum=3)",
+    "process_count": 4,
+    "total_time": 26,
+    "metrics": {
+      "per_process": [
+        {
+          "pid": "P2",
+          "arrival_time": 1,
+          "burst_time": 4,
+          "priority": 1,
+          "completion_time": 16,
+          "turnaround_time": 15,
+          "waiting_time": 11,
+          "response_time": 2
+        },
+        {
+          "pid": "P4",
+          "arrival_time": 3,
+          "burst_time": 5,
+          "priority": 2,
+          "completion_time": 21,
+          "turnaround_time": 18,
+          "waiting_time": 13,
+          "response_time": 6
+        },
+        {
+          "pid": "P1",
+          "arrival_time": 0,
+          "burst_time": 8,
+          "priority": 3,
+          "completion_time": 23,
+          "turnaround_time": 23,
+          "waiting_time": 15,
+          "response_time": 0
+        },
+        {
+          "pid": "P3",
+          "arrival_time": 2,
+          "burst_time": 9,
+          "priority": 4,
+          "completion_time": 26,
+          "turnaround_time": 24,
+          "waiting_time": 15,
+          "response_time": 4
+        }
+      ],
+      "system": {
+        "avg_turnaround": 20.0,
+        "avg_waiting": 13.5,
+        "avg_response": 3.0,
+        "cpu_utilization": 100.0,
+        "throughput": 0.154
+      }
+    },
+    "gantt_chart": [
+      {
+        "process_id": "P1",
+        "start": 0,
+        "end": 3,
+        "duration": 3
+      },
+      {
+        "process_id": "P2",
+        "start": 3,
+        "end": 6,
+        "duration": 3
+      },
+      {
+        "process_id": "P3",
+        "start": 6,
+        "end": 9,
+        "duration": 3
+      },
+      {
+        "process_id": "P4",
+        "start": 9,
+        "end": 12,
+        "duration": 3
+      },
+      {
+        "process_id": "P1",
+        "start": 12,
+        "end": 15,
+        "duration": 3
+      },
+      {
+        "process_id": "P2",
+        "start": 15,
+        "end": 16,
+        "duration": 1
+      },
+      {
+        "process_id": "P3",
+        "start": 16,
+        "end": 19,
+        "duration": 3
+      },
+      {
+        "process_id": "P4",
+        "start": 19,
+        "end": 21,
+        "duration": 2
+      },
+      {
+        "process_id": "P1",
+        "start": 21,
+        "end": 23,
+        "duration": 2
+      },
+      {
+        "process_id": "P3",
+        "start": 23,
+        "end": 26,
+        "duration": 3
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-01-05T23:00:16.499239",
+    "algorithm": "Priority Scheduling (sin desalojo)",
+    "process_count": 4,
+    "total_time": 26,
+    "metrics": {
+      "per_process": [
+        {
+          "pid": "P1",
+          "arrival_time": 0,
+          "burst_time": 8,
+          "priority": 3,
+          "completion_time": 8,
+          "turnaround_time": 8,
+          "waiting_time": 0,
+          "response_time": 0
+        },
+        {
+          "pid": "P2",
+          "arrival_time": 1,
+          "burst_time": 4,
+          "priority": 1,
+          "completion_time": 12,
+          "turnaround_time": 11,
+          "waiting_time": 7,
+          "response_time": 7
+        },
+        {
+          "pid": "P4",
+          "arrival_time": 3,
+          "burst_time": 5,
+          "priority": 2,
+          "completion_time": 17,
+          "turnaround_time": 14,
+          "waiting_time": 9,
+          "response_time": 9
+        },
+        {
+          "pid": "P3",
+          "arrival_time": 2,
+          "burst_time": 9,
+          "priority": 4,
+          "completion_time": 26,
+          "turnaround_time": 24,
+          "waiting_time": 15,
+          "response_time": 15
+        }
+      ],
+      "system": {
+        "avg_turnaround": 14.25,
+        "avg_waiting": 7.75,
+        "avg_response": 7.75,
+        "cpu_utilization": 100.0,
+        "throughput": 0.154
+      }
+    },
+    "gantt_chart": [
+      {
+        "process_id": "P1",
+        "start": 0,
+        "end": 8,
+        "duration": 8
+      },
+      {
+        "process_id": "P2",
+        "start": 8,
+        "end": 12,
+        "duration": 4
+      },
+      {
+        "process_id": "P4",
+        "start": 12,
+        "end": 17,
+        "duration": 5
+      },
+      {
+        "process_id": "P3",
+        "start": 17,
+        "end": 26,
+        "duration": 9
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-01-05T23:28:33.900085",
+    "algorithm": "First Come First Served (FCFS)",
+    "process_count": 4,
+    "total_time": 26,
+    "metrics": {
+      "per_process": [
+        {
+          "pid": "P1",
+          "arrival_time": 0,
+          "burst_time": 8,
+          "priority": 3,
+          "completion_time": 8,
+          "turnaround_time": 8,
+          "waiting_time": 0,
+          "response_time": 0
+        },
+        {
+          "pid": "P2",
+          "arrival_time": 1,
+          "burst_time": 4,
+          "priority": 1,
+          "completion_time": 12,
+          "turnaround_time": 11,
+          "waiting_time": 7,
+          "response_time": 7
+        },
+        {
+          "pid": "P3",
+          "arrival_time": 2,
+          "burst_time": 9,
+          "priority": 4,
+          "completion_time": 21,
+          "turnaround_time": 19,
+          "waiting_time": 10,
+          "response_time": 10
+        },
+        {
+          "pid": "P4",
+          "arrival_time": 3,
+          "burst_time": 5,
+          "priority": 2,
+          "completion_time": 26,
+          "turnaround_time": 23,
+          "waiting_time": 18,
+          "response_time": 18
+        }
+      ],
+      "system": {
+        "avg_turnaround": 15.25,
+        "avg_waiting": 8.75,
+        "avg_response": 8.75,
+        "cpu_utilization": 100.0,
+        "throughput": 0.154
+      }
+    },
+    "gantt_chart": [
+      {
+        "process_id": "P1",
+        "start": 0,
+        "end": 8,
+        "duration": 8
+      },
+      {
+        "process_id": "P2",
+        "start": 8,
+        "end": 12,
+        "duration": 4
+      },
+      {
+        "process_id": "P3",
+        "start": 12,
+        "end": 21,
+        "duration": 9
+      },
+      {
+        "process_id": "P4",
+        "start": 21,
+        "end": 26,
+        "duration": 5
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-01-05T23:29:44.694183",
+    "algorithm": "Priority Scheduling (sin desalojo)",
+    "process_count": 4,
+    "total_time": 26,
+    "metrics": {
+      "per_process": [
+        {
+          "pid": "P1",
+          "arrival_time": 0,
+          "burst_time": 8,
+          "priority": 3,
+          "completion_time": 8,
+          "turnaround_time": 8,
+          "waiting_time": 0,
+          "response_time": 0
+        },
+        {
+          "pid": "P2",
+          "arrival_time": 1,
+          "burst_time": 4,
+          "priority": 1,
+          "completion_time": 12,
+          "turnaround_time": 11,
+          "waiting_time": 7,
+          "response_time": 7
+        },
+        {
+          "pid": "P4",
+          "arrival_time": 3,
+          "burst_time": 5,
+          "priority": 2,
+          "completion_time": 17,
+          "turnaround_time": 14,
+          "waiting_time": 9,
+          "response_time": 9
+        },
+        {
+          "pid": "P3",
+          "arrival_time": 2,
+          "burst_time": 9,
+          "priority": 4,
+          "completion_time": 26,
+          "turnaround_time": 24,
+          "waiting_time": 15,
+          "response_time": 15
+        }
+      ],
+      "system": {
+        "avg_turnaround": 14.25,
+        "avg_waiting": 7.75,
+        "avg_response": 7.75,
+        "cpu_utilization": 100.0,
+        "throughput": 0.154
+      }
+    },
+    "gantt_chart": [
+      {
+        "process_id": "P1",
+        "start": 0,
+        "end": 8,
+        "duration": 8
+      },
+      {
+        "process_id": "P2",
+        "start": 8,
+        "end": 12,
+        "duration": 4
+      },
+      {
+        "process_id": "P4",
+        "start": 12,
+        "end": 17,
+        "duration": 5
+      },
+      {
+        "process_id": "P3",
+        "start": 17,
+        "end": 26,
+        "duration": 9
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-01-05T23:36:28.266204",
+    "algorithm": "Shortest Job First (SJF) - No apropiativo",
+    "process_count": 6,
+    "total_time": 34,
+    "metrics": {
+      "per_process": [
+        {
+          "pid": "P1",
+          "arrival_time": 0,
+          "burst_time": 7,
+          "priority": 1,
+          "completion_time": 7,
+          "turnaround_time": 7,
+          "waiting_time": 0,
+          "response_time": 0
+        },
+        {
+          "pid": "P5",
+          "arrival_time": 6,
+          "burst_time": 3,
+          "priority": 4,
+          "completion_time": 10,
+          "turnaround_time": 4,
+          "waiting_time": 1,
+          "response_time": 1
+        },
+        {
+          "pid": "P2",
+          "arrival_time": 2,
+          "burst_time": 4,
+          "priority": 3,
+          "completion_time": 14,
+          "turnaround_time": 12,
+          "waiting_time": 8,
+          "response_time": 8
+        },
+        {
+          "pid": "P4",
+          "arrival_time": 5,
+          "burst_time": 5,
+          "priority": 1,
+          "completion_time": 19,
+          "turnaround_time": 14,
+          "waiting_time": 9,
+          "response_time": 9
+        },
+        {
+          "pid": "P6",
+          "arrival_time": 8,
+          "burst_time": 6,
+          "priority": 2,
+          "completion_time": 25,
+          "turnaround_time": 17,
+          "waiting_time": 11,
+          "response_time": 11
+        },
+        {
+          "pid": "P3",
+          "arrival_time": 3,
+          "burst_time": 9,
+          "priority": 2,
+          "completion_time": 34,
+          "turnaround_time": 31,
+          "waiting_time": 22,
+          "response_time": 22
+        }
+      ],
+      "system": {
+        "avg_turnaround": 14.17,
+        "avg_waiting": 8.5,
+        "avg_response": 8.5,
+        "cpu_utilization": 100.0,
+        "throughput": 0.176
+      }
+    },
+    "gantt_chart": [
+      {
+        "process_id": "P1",
+        "start": 0,
+        "end": 7,
+        "duration": 7
+      },
+      {
+        "process_id": "P5",
+        "start": 7,
+        "end": 10,
+        "duration": 3
+      },
+      {
+        "process_id": "P2",
+        "start": 10,
+        "end": 14,
+        "duration": 4
+      },
+      {
+        "process_id": "P4",
+        "start": 14,
+        "end": 19,
+        "duration": 5
+      },
+      {
+        "process_id": "P6",
+        "start": 19,
+        "end": 25,
+        "duration": 6
+      },
+      {
+        "process_id": "P3",
+        "start": 25,
+        "end": 34,
+        "duration": 9
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-01-05T23:39:18.781259",
+    "algorithm": "First Come First Served (FCFS)",
+    "process_count": 4,
+    "total_time": 26,
+    "metrics": {
+      "per_process": [
+        {
+          "pid": "P1",
+          "arrival_time": 0,
+          "burst_time": 8,
+          "priority": 3,
+          "completion_time": 8,
+          "turnaround_time": 8,
+          "waiting_time": 0,
+          "response_time": 0
+        },
+        {
+          "pid": "P2",
+          "arrival_time": 1,
+          "burst_time": 4,
+          "priority": 1,
+          "completion_time": 12,
+          "turnaround_time": 11,
+          "waiting_time": 7,
+          "response_time": 7
+        },
+        {
+          "pid": "P3",
+          "arrival_time": 2,
+          "burst_time": 9,
+          "priority": 4,
+          "completion_time": 21,
+          "turnaround_time": 19,
+          "waiting_time": 10,
+          "response_time": 10
+        },
+        {
+          "pid": "P4",
+          "arrival_time": 3,
+          "burst_time": 5,
+          "priority": 2,
+          "completion_time": 26,
+          "turnaround_time": 23,
+          "waiting_time": 18,
+          "response_time": 18
+        }
+      ],
+      "system": {
+        "avg_turnaround": 15.25,
+        "avg_waiting": 8.75,
+        "avg_response": 8.75,
+        "cpu_utilization": 100.0,
+        "throughput": 0.154
+      }
+    },
+    "gantt_chart": [
+      {
+        "process_id": "P1",
+        "start": 0,
+        "end": 8,
+        "duration": 8
+      },
+      {
+        "process_id": "P2",
+        "start": 8,
+        "end": 12,
+        "duration": 4
+      },
+      {
+        "process_id": "P3",
+        "start": 12,
+        "end": 21,
+        "duration": 9
+      },
+      {
+        "process_id": "P4",
+        "start": 21,
+        "end": 26,
+        "duration": 5
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-01-05T23:40:14.397681",
+    "algorithm": "Round Robin (Quantum=5)",
+    "process_count": 4,
+    "total_time": 26,
+    "metrics": {
+      "per_process": [
+        {
+          "pid": "P2",
+          "arrival_time": 1,
+          "burst_time": 4,
+          "priority": 1,
+          "completion_time": 9,
+          "turnaround_time": 8,
+          "waiting_time": 4,
+          "response_time": 4
+        },
+        {
+          "pid": "P4",
+          "arrival_time": 3,
+          "burst_time": 5,
+          "priority": 2,
+          "completion_time": 19,
+          "turnaround_time": 16,
+          "waiting_time": 11,
+          "response_time": 11
+        },
+        {
+          "pid": "P1",
+          "arrival_time": 0,
+          "burst_time": 8,
+          "priority": 3,
+          "completion_time": 22,
+          "turnaround_time": 22,
+          "waiting_time": 14,
+          "response_time": 0
+        },
+        {
+          "pid": "P3",
+          "arrival_time": 2,
+          "burst_time": 9,
+          "priority": 4,
+          "completion_time": 26,
+          "turnaround_time": 24,
+          "waiting_time": 15,
+          "response_time": 7
+        }
+      ],
+      "system": {
+        "avg_turnaround": 17.5,
+        "avg_waiting": 11.0,
+        "avg_response": 5.5,
+        "cpu_utilization": 100.0,
+        "throughput": 0.154
+      }
+    },
+    "gantt_chart": [
+      {
+        "process_id": "P1",
+        "start": 0,
+        "end": 5,
+        "duration": 5
+      },
+      {
+        "process_id": "P2",
+        "start": 5,
+        "end": 9,
+        "duration": 4
+      },
+      {
+        "process_id": "P3",
+        "start": 9,
+        "end": 14,
+        "duration": 5
+      },
+      {
+        "process_id": "P4",
+        "start": 14,
+        "end": 19,
+        "duration": 5
+      },
+      {
+        "process_id": "P1",
+        "start": 19,
+        "end": 22,
+        "duration": 3
+      },
+      {
+        "process_id": "P3",
+        "start": 22,
+        "end": 26,
+        "duration": 4
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-01-05T23:51:42.300198",
+    "algorithm": "First Come First Served (FCFS)",
+    "process_count": 4,
+    "total_time": 26,
+    "metrics": {
+      "per_process": [
+        {
+          "pid": "P1",
+          "arrival_time": 0,
+          "burst_time": 8,
+          "priority": 3,
+          "completion_time": 8,
+          "turnaround_time": 8,
+          "waiting_time": 0,
+          "response_time": 0
+        },
+        {
+          "pid": "P2",
+          "arrival_time": 1,
+          "burst_time": 4,
+          "priority": 1,
+          "completion_time": 12,
+          "turnaround_time": 11,
+          "waiting_time": 7,
+          "response_time": 7
+        },
+        {
+          "pid": "P3",
+          "arrival_time": 2,
+          "burst_time": 9,
+          "priority": 4,
+          "completion_time": 21,
+          "turnaround_time": 19,
+          "waiting_time": 10,
+          "response_time": 10
+        },
+        {
+          "pid": "P4",
+          "arrival_time": 3,
+          "burst_time": 5,
+          "priority": 2,
+          "completion_time": 26,
+          "turnaround_time": 23,
+          "waiting_time": 18,
+          "response_time": 18
+        }
+      ],
+      "system": {
+        "avg_turnaround": 15.25,
+        "avg_waiting": 8.75,
+        "avg_response": 8.75,
+        "cpu_utilization": 100.0,
+        "throughput": 0.154
+      }
+    },
+    "gantt_chart": [
+      {
+        "process_id": "P1",
+        "start": 0,
+        "end": 8,
+        "duration": 8
+      },
+      {
+        "process_id": "P2",
+        "start": 8,
+        "end": 12,
+        "duration": 4
+      },
+      {
+        "process_id": "P3",
+        "start": 12,
+        "end": 21,
+        "duration": 9
+      },
+      {
+        "process_id": "P4",
+        "start": 21,
+        "end": 26,
+        "duration": 5
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-01-06T00:02:15.324710",
+    "algorithm": "Shortest Job First (SJF) - No apropiativo",
+    "process_count": 4,
+    "total_time": 26,
+    "metrics": {
+      "per_process": [
+        {
+          "pid": "P1",
+          "arrival_time": 0,
+          "burst_time": 8,
+          "priority": 3,
+          "completion_time": 8,
+          "turnaround_time": 8,
+          "waiting_time": 0,
+          "response_time": 0
+        },
+        {
+          "pid": "P2",
+          "arrival_time": 1,
+          "burst_time": 4,
+          "priority": 1,
+          "completion_time": 12,
+          "turnaround_time": 11,
+          "waiting_time": 7,
+          "response_time": 7
+        },
+        {
+          "pid": "P4",
+          "arrival_time": 3,
+          "burst_time": 5,
+          "priority": 2,
+          "completion_time": 17,
+          "turnaround_time": 14,
+          "waiting_time": 9,
+          "response_time": 9
+        },
+        {
+          "pid": "P3",
+          "arrival_time": 2,
+          "burst_time": 9,
+          "priority": 4,
+          "completion_time": 26,
+          "turnaround_time": 24,
+          "waiting_time": 15,
+          "response_time": 15
+        }
+      ],
+      "system": {
+        "avg_turnaround": 14.25,
+        "avg_waiting": 7.75,
+        "avg_response": 7.75,
+        "cpu_utilization": 100.0,
+        "throughput": 0.154
+      }
+    },
+    "gantt_chart": [
+      {
+        "process_id": "P1",
+        "start": 0,
+        "end": 8,
+        "duration": 8
+      },
+      {
+        "process_id": "P2",
+        "start": 8,
+        "end": 12,
+        "duration": 4
+      },
+      {
+        "process_id": "P4",
+        "start": 12,
+        "end": 17,
+        "duration": 5
+      },
+      {
+        "process_id": "P3",
+        "start": 17,
+        "end": 26,
+        "duration": 9
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-01-06T00:05:55.596263",
+    "algorithm": "First Come First Served (FCFS)",
+    "process_count": 5,
+    "total_time": 24,
+    "metrics": {
+      "per_process": [
+        {
+          "pid": "P1",
+          "arrival_time": 0,
+          "burst_time": 10,
+          "priority": 2,
+          "completion_time": 10,
+          "turnaround_time": 10,
+          "waiting_time": 0,
+          "response_time": 0
+        },
+        {
+          "pid": "P2",
+          "arrival_time": 2,
+          "burst_time": 3,
+          "priority": 1,
+          "completion_time": 13,
+          "turnaround_time": 11,
+          "waiting_time": 8,
+          "response_time": 8
+        },
+        {
+          "pid": "P3",
+          "arrival_time": 4,
+          "burst_time": 6,
+          "priority": 3,
+          "completion_time": 19,
+          "turnaround_time": 15,
+          "waiting_time": 9,
+          "response_time": 9
+        },
+        {
+          "pid": "P4",
+          "arrival_time": 6,
+          "burst_time": 1,
+          "priority": 1,
+          "completion_time": 20,
+          "turnaround_time": 14,
+          "waiting_time": 13,
+          "response_time": 13
+        },
+        {
+          "pid": "P5",
+          "arrival_time": 8,
+          "burst_time": 4,
+          "priority": 2,
+          "completion_time": 24,
+          "turnaround_time": 16,
+          "waiting_time": 12,
+          "response_time": 12
+        }
+      ],
+      "system": {
+        "avg_turnaround": 13.2,
+        "avg_waiting": 8.4,
+        "avg_response": 8.4,
+        "cpu_utilization": 100.0,
+        "throughput": 0.208
+      }
+    },
+    "gantt_chart": [
+      {
+        "process_id": "P1",
+        "start": 0,
+        "end": 10,
+        "duration": 10
+      },
+      {
+        "process_id": "P2",
+        "start": 10,
+        "end": 13,
+        "duration": 3
+      },
+      {
+        "process_id": "P3",
+        "start": 13,
+        "end": 19,
+        "duration": 6
+      },
+      {
+        "process_id": "P4",
+        "start": 19,
+        "end": 20,
+        "duration": 1
+      },
+      {
+        "process_id": "P5",
+        "start": 20,
+        "end": 24,
+        "duration": 4
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-01-06T00:10:30.867245",
+    "algorithm": "Priority Scheduling (sin desalojo)",
+    "process_count": 5,
+    "total_time": 24,
+    "metrics": {
+      "per_process": [
+        {
+          "pid": "P1",
+          "arrival_time": 0,
+          "burst_time": 10,
+          "priority": 2,
+          "completion_time": 10,
+          "turnaround_time": 10,
+          "waiting_time": 0,
+          "response_time": 0
+        },
+        {
+          "pid": "P2",
+          "arrival_time": 2,
+          "burst_time": 3,
+          "priority": 1,
+          "completion_time": 13,
+          "turnaround_time": 11,
+          "waiting_time": 8,
+          "response_time": 8
+        },
+        {
+          "pid": "P4",
+          "arrival_time": 6,
+          "burst_time": 1,
+          "priority": 1,
+          "completion_time": 14,
+          "turnaround_time": 8,
+          "waiting_time": 7,
+          "response_time": 7
+        },
+        {
+          "pid": "P5",
+          "arrival_time": 8,
+          "burst_time": 4,
+          "priority": 2,
+          "completion_time": 18,
+          "turnaround_time": 10,
+          "waiting_time": 6,
+          "response_time": 6
+        },
+        {
+          "pid": "P3",
+          "arrival_time": 4,
+          "burst_time": 6,
+          "priority": 3,
+          "completion_time": 24,
+          "turnaround_time": 20,
+          "waiting_time": 14,
+          "response_time": 14
+        }
+      ],
+      "system": {
+        "avg_turnaround": 11.8,
+        "avg_waiting": 7.0,
+        "avg_response": 7.0,
+        "cpu_utilization": 100.0,
+        "throughput": 0.208
+      }
+    },
+    "gantt_chart": [
+      {
+        "process_id": "P1",
+        "start": 0,
+        "end": 10,
+        "duration": 10
+      },
+      {
+        "process_id": "P2",
+        "start": 10,
+        "end": 13,
+        "duration": 3
+      },
+      {
+        "process_id": "P4",
+        "start": 13,
+        "end": 14,
+        "duration": 1
+      },
+      {
+        "process_id": "P5",
+        "start": 14,
+        "end": 18,
+        "duration": 4
+      },
+      {
+        "process_id": "P3",
+        "start": 18,
+        "end": 24,
+        "duration": 6
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-01-06T00:12:21.096929",
+    "algorithm": "Shortest Job First (SJF) - No apropiativo",
+    "process_count": 6,
+    "total_time": 34,
+    "metrics": {
+      "per_process": [
+        {
+          "pid": "P1",
+          "arrival_time": 0,
+          "burst_time": 7,
+          "priority": 1,
+          "completion_time": 7,
+          "turnaround_time": 7,
+          "waiting_time": 0,
+          "response_time": 0
+        },
+        {
+          "pid": "P5",
+          "arrival_time": 6,
+          "burst_time": 3,
+          "priority": 4,
+          "completion_time": 10,
+          "turnaround_time": 4,
+          "waiting_time": 1,
+          "response_time": 1
+        },
+        {
+          "pid": "P2",
+          "arrival_time": 2,
+          "burst_time": 4,
+          "priority": 3,
+          "completion_time": 14,
+          "turnaround_time": 12,
+          "waiting_time": 8,
+          "response_time": 8
+        },
+        {
+          "pid": "P4",
+          "arrival_time": 5,
+          "burst_time": 5,
+          "priority": 1,
+          "completion_time": 19,
+          "turnaround_time": 14,
+          "waiting_time": 9,
+          "response_time": 9
+        },
+        {
+          "pid": "P6",
+          "arrival_time": 8,
+          "burst_time": 6,
+          "priority": 2,
+          "completion_time": 25,
+          "turnaround_time": 17,
+          "waiting_time": 11,
+          "response_time": 11
+        },
+        {
+          "pid": "P3",
+          "arrival_time": 3,
+          "burst_time": 9,
+          "priority": 2,
+          "completion_time": 34,
+          "turnaround_time": 31,
+          "waiting_time": 22,
+          "response_time": 22
+        }
+      ],
+      "system": {
+        "avg_turnaround": 14.17,
+        "avg_waiting": 8.5,
+        "avg_response": 8.5,
+        "cpu_utilization": 100.0,
+        "throughput": 0.176
+      }
+    },
+    "gantt_chart": [
+      {
+        "process_id": "P1",
+        "start": 0,
+        "end": 7,
+        "duration": 7
+      },
+      {
+        "process_id": "P5",
+        "start": 7,
+        "end": 10,
+        "duration": 3
+      },
+      {
+        "process_id": "P2",
+        "start": 10,
+        "end": 14,
+        "duration": 4
+      },
+      {
+        "process_id": "P4",
+        "start": 14,
+        "end": 19,
+        "duration": 5
+      },
+      {
+        "process_id": "P6",
+        "start": 19,
+        "end": 25,
+        "duration": 6
+      },
+      {
+        "process_id": "P3",
+        "start": 25,
+        "end": 34,
+        "duration": 9
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-01-06T00:13:24.479354",
+    "algorithm": "Round Robin (Quantum=5)",
+    "process_count": 6,
+    "total_time": 44,
+    "metrics": {
+      "per_process": [
+        {
+          "pid": "P4",
+          "arrival_time": 0,
+          "burst_time": 7,
+          "priority": 4,
+          "completion_time": 22,
+          "turnaround_time": 22,
+          "waiting_time": 15,
+          "response_time": 0
+        },
+        {
+          "pid": "P6",
+          "arrival_time": 6,
+          "burst_time": 4,
+          "priority": 5,
+          "completion_time": 26,
+          "turnaround_time": 20,
+          "waiting_time": 16,
+          "response_time": 16
+        },
+        {
+          "pid": "P5",
+          "arrival_time": 9,
+          "burst_time": 4,
+          "priority": 3,
+          "completion_time": 30,
+          "turnaround_time": 21,
+          "waiting_time": 17,
+          "response_time": 17
+        },
+        {
+          "pid": "P1",
+          "arrival_time": 4,
+          "burst_time": 10,
+          "priority": 5,
+          "completion_time": 40,
+          "turnaround_time": 36,
+          "waiting_time": 26,
+          "response_time": 6
+        },
+        {
+          "pid": "P3",
+          "arrival_time": 4,
+          "burst_time": 7,
+          "priority": 2,
+          "completion_time": 42,
+          "turnaround_time": 38,
+          "waiting_time": 31,
+          "response_time": 11
+        },
+        {
+          "pid": "P2",
+          "arrival_time": 2,
+          "burst_time": 12,
+          "priority": 1,
+          "completion_time": 44,
+          "turnaround_time": 42,
+          "waiting_time": 30,
+          "response_time": 3
+        }
+      ],
+      "system": {
+        "avg_turnaround": 29.83,
+        "avg_waiting": 22.5,
+        "avg_response": 8.83,
+        "cpu_utilization": 100.0,
+        "throughput": 0.136
+      }
+    },
+    "gantt_chart": [
+      {
+        "process_id": "P4",
+        "start": 0,
+        "end": 5,
+        "duration": 5
+      },
+      {
+        "process_id": "P2",
+        "start": 5,
+        "end": 10,
+        "duration": 5
+      },
+      {
+        "process_id": "P1",
+        "start": 10,
+        "end": 15,
+        "duration": 5
+      },
+      {
+        "process_id": "P3",
+        "start": 15,
+        "end": 20,
+        "duration": 5
+      },
+      {
+        "process_id": "P4",
+        "start": 20,
+        "end": 22,
+        "duration": 2
+      },
+      {
+        "process_id": "P6",
+        "start": 22,
+        "end": 26,
+        "duration": 4
+      },
+      {
+        "process_id": "P5",
+        "start": 26,
+        "end": 30,
+        "duration": 4
+      },
+      {
+        "process_id": "P2",
+        "start": 30,
+        "end": 35,
+        "duration": 5
+      },
+      {
+        "process_id": "P1",
+        "start": 35,
+        "end": 40,
+        "duration": 5
+      },
+      {
+        "process_id": "P3",
+        "start": 40,
+        "end": 42,
+        "duration": 2
+      },
+      {
+        "process_id": "P2",
+        "start": 42,
+        "end": 44,
+        "duration": 2
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-01-06T00:16:21.092444",
+    "algorithm": "Shortest Job First (SJF) - No apropiativo",
+    "process_count": 5,
+    "total_time": 24,
+    "metrics": {
+      "per_process": [
+        {
+          "pid": "P1",
+          "arrival_time": 0,
+          "burst_time": 10,
+          "priority": 2,
+          "completion_time": 10,
+          "turnaround_time": 10,
+          "waiting_time": 0,
+          "response_time": 0
+        },
+        {
+          "pid": "P4",
+          "arrival_time": 6,
+          "burst_time": 1,
+          "priority": 1,
+          "completion_time": 11,
+          "turnaround_time": 5,
+          "waiting_time": 4,
+          "response_time": 4
+        },
+        {
+          "pid": "P2",
+          "arrival_time": 2,
+          "burst_time": 3,
+          "priority": 1,
+          "completion_time": 14,
+          "turnaround_time": 12,
+          "waiting_time": 9,
+          "response_time": 9
+        },
+        {
+          "pid": "P5",
+          "arrival_time": 8,
+          "burst_time": 4,
+          "priority": 2,
+          "completion_time": 18,
+          "turnaround_time": 10,
+          "waiting_time": 6,
+          "response_time": 6
+        },
+        {
+          "pid": "P3",
+          "arrival_time": 4,
+          "burst_time": 6,
+          "priority": 3,
+          "completion_time": 24,
+          "turnaround_time": 20,
+          "waiting_time": 14,
+          "response_time": 14
+        }
+      ],
+      "system": {
+        "avg_turnaround": 11.4,
+        "avg_waiting": 6.6,
+        "avg_response": 6.6,
+        "cpu_utilization": 100.0,
+        "throughput": 0.208
+      }
+    },
+    "gantt_chart": [
+      {
+        "process_id": "P1",
+        "start": 0,
+        "end": 10,
+        "duration": 10
+      },
+      {
+        "process_id": "P4",
+        "start": 10,
+        "end": 11,
+        "duration": 1
+      },
+      {
+        "process_id": "P2",
+        "start": 11,
+        "end": 14,
+        "duration": 3
+      },
+      {
+        "process_id": "P5",
+        "start": 14,
+        "end": 18,
+        "duration": 4
+      },
+      {
+        "process_id": "P3",
+        "start": 18,
+        "end": 24,
+        "duration": 6
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-01-07T11:32:21.566377",
+    "algorithm": "First Come First Served (FCFS)",
+    "process_count": 4,
+    "total_time": 26,
+    "metrics": {
+      "per_process": [
+        {
+          "pid": "P1",
+          "arrival_time": 0,
+          "burst_time": 8,
+          "priority": 3,
+          "completion_time": 8,
+          "turnaround_time": 8,
+          "waiting_time": 0,
+          "response_time": 0
+        },
+        {
+          "pid": "P2",
+          "arrival_time": 1,
+          "burst_time": 4,
+          "priority": 1,
+          "completion_time": 12,
+          "turnaround_time": 11,
+          "waiting_time": 7,
+          "response_time": 7
+        },
+        {
+          "pid": "P3",
+          "arrival_time": 2,
+          "burst_time": 9,
+          "priority": 4,
+          "completion_time": 21,
+          "turnaround_time": 19,
+          "waiting_time": 10,
+          "response_time": 10
+        },
+        {
+          "pid": "P4",
+          "arrival_time": 3,
+          "burst_time": 5,
+          "priority": 2,
+          "completion_time": 26,
+          "turnaround_time": 23,
+          "waiting_time": 18,
+          "response_time": 18
+        }
+      ],
+      "system": {
+        "avg_turnaround": 15.25,
+        "avg_waiting": 8.75,
+        "avg_response": 8.75,
+        "cpu_utilization": 100.0,
+        "throughput": 0.154
+      }
+    },
+    "gantt_chart": [
+      {
+        "process_id": "P1",
+        "start": 0,
+        "end": 8,
+        "duration": 8
+      },
+      {
+        "process_id": "P2",
+        "start": 8,
+        "end": 12,
+        "duration": 4
+      },
+      {
+        "process_id": "P3",
+        "start": 12,
+        "end": 21,
+        "duration": 9
+      },
+      {
+        "process_id": "P4",
+        "start": 21,
+        "end": 26,
+        "duration": 5
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-01-07T11:34:56.713942",
+    "algorithm": "First Come First Served (FCFS)",
+    "process_count": 4,
+    "total_time": 26,
+    "metrics": {
+      "per_process": [
+        {
+          "pid": "P1",
+          "arrival_time": 0,
+          "burst_time": 8,
+          "priority": 3,
+          "completion_time": 8,
+          "turnaround_time": 8,
+          "waiting_time": 0,
+          "response_time": 0
+        },
+        {
+          "pid": "P2",
+          "arrival_time": 1,
+          "burst_time": 4,
+          "priority": 1,
+          "completion_time": 12,
+          "turnaround_time": 11,
+          "waiting_time": 7,
+          "response_time": 7
+        },
+        {
+          "pid": "P3",
+          "arrival_time": 2,
+          "burst_time": 9,
+          "priority": 4,
+          "completion_time": 21,
+          "turnaround_time": 19,
+          "waiting_time": 10,
+          "response_time": 10
+        },
+        {
+          "pid": "P4",
+          "arrival_time": 3,
+          "burst_time": 5,
+          "priority": 2,
+          "completion_time": 26,
+          "turnaround_time": 23,
+          "waiting_time": 18,
+          "response_time": 18
+        }
+      ],
+      "system": {
+        "avg_turnaround": 15.25,
+        "avg_waiting": 8.75,
+        "avg_response": 8.75,
+        "cpu_utilization": 100.0,
+        "throughput": 0.154
+      }
+    },
+    "gantt_chart": [
+      {
+        "process_id": "P1",
+        "start": 0,
+        "end": 8,
+        "duration": 8
+      },
+      {
+        "process_id": "P2",
+        "start": 8,
+        "end": 12,
+        "duration": 4
+      },
+      {
+        "process_id": "P3",
+        "start": 12,
+        "end": 21,
+        "duration": 9
+      },
+      {
+        "process_id": "P4",
+        "start": 21,
+        "end": 26,
+        "duration": 5
+      }
+    ]
+  },
+  {
+    "timestamp": "2026-01-07T11:36:31.267764",
+    "algorithm": "Round Robin (Quantum=4)",
+    "process_count": 4,
+    "total_time": 26,
+    "metrics": {
+      "per_process": [
+        {
+          "pid": "P2",
+          "arrival_time": 1,
+          "burst_time": 4,
+          "priority": 1,
+          "completion_time": 8,
+          "turnaround_time": 7,
+          "waiting_time": 3,
+          "response_time": 3
+        },
+        {
+          "pid": "P1",
+          "arrival_time": 0,
+          "burst_time": 8,
+          "priority": 3,
+          "completion_time": 20,
+          "turnaround_time": 20,
+          "waiting_time": 12,
+          "response_time": 0
+        },
+        {
+          "pid": "P4",
+          "arrival_time": 3,
+          "burst_time": 5,
+          "priority": 2,
+          "completion_time": 25,
+          "turnaround_time": 22,
+          "waiting_time": 17,
+          "response_time": 9
+        },
+        {
+          "pid": "P3",
+          "arrival_time": 2,
+          "burst_time": 9,
+          "priority": 4,
+          "completion_time": 26,
+          "turnaround_time": 24,
+          "waiting_time": 15,
+          "response_time": 6
+        }
+      ],
+      "system": {
+        "avg_turnaround": 18.25,
+        "avg_waiting": 11.75,
+        "avg_response": 4.5,
+        "cpu_utilization": 100.0,
+        "throughput": 0.154
+      }
+    },
+    "gantt_chart": [
+      {
+        "process_id": "P1",
+        "start": 0,
+        "end": 4,
+        "duration": 4
+      },
+      {
+        "process_id": "P2",
+        "start": 4,
+        "end": 8,
+        "duration": 4
+      },
+      {
+        "process_id": "P3",
+        "start": 8,
+        "end": 12,
+        "duration": 4
+      },
+      {
+        "process_id": "P4",
+        "start": 12,
+        "end": 16,
+        "duration": 4
+      },
+      {
+        "process_id": "P1",
+        "start": 16,
+        "end": 20,
+        "duration": 4
+      },
+      {
+        "process_id": "P3",
+        "start": 20,
+        "end": 24,
+        "duration": 4
+      },
+      {
+        "process_id": "P4",
+        "start": 24,
+        "end": 25,
+        "duration": 1
+      },
+      {
+        "process_id": "P3",
+        "start": 25,
+        "end": 26,
+        "duration": 1
+      }
+    ]
   }
 ]

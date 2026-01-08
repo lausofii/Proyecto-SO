@@ -22,12 +22,12 @@ class ResultsDisplay:
     def show_results(self, scheduler, metrics):
         """Muestra resultados de una simulación"""
         print("\n" + "="*80)
-        print("📊 RESULTADOS DE LA SIMULACIÓN")
+        print("RESULTADOS DE LA SIMULACIÓN")
         print("="*80)
         
-        print(f"\n📈 Algoritmo: {scheduler.name}")
-        print(f"⏱️  Tiempo total de simulación: {scheduler.current_time}")
-        print(f"✅ Procesos completados: {len(scheduler.completed_processes)}")
+        print(f"\nAlgoritmo: {scheduler.name}")
+        print(f"Tiempo total de simulación: {scheduler.current_time}")
+        print(f"Procesos completados: {len(scheduler.completed_processes)}")
         
         # Mostrar diagrama de Gantt
         print("\n--- DIAGRAMA DE GANTT ---")
@@ -73,7 +73,7 @@ class ResultsDisplay:
     def show_comparison(self, results):
         """Muestra comparativa entre algoritmos"""
         print("\n" + "="*100)
-        print("📊 COMPARATIVA DE ALGORITMOS")
+        print("COMPARATIVA DE ALGORITMOS")
         print("="*100)
         
         # Encabezado de la tabla
@@ -93,11 +93,11 @@ class ResultsDisplay:
             metrics = result['metrics']['system']
             
             # Determinar si es el mejor en cada categoría
-            turn_arrow = "🏆" if metrics['avg_turnaround'] == best_turnaround else ""
-            wait_arrow = "🏆" if metrics['avg_waiting'] == best_waiting else ""
-            resp_arrow = "🏆" if metrics['avg_response'] == best_response else ""
-            cpu_arrow = "🏆" if metrics['cpu_utilization'] == best_cpu else ""
-            thr_arrow = "🏆" if metrics['throughput'] == best_throughput else ""
+            turn_arrow = "" if metrics['avg_turnaround'] == best_turnaround else ""
+            wait_arrow = "" if metrics['avg_waiting'] == best_waiting else ""
+            resp_arrow = "" if metrics['avg_response'] == best_response else ""
+            cpu_arrow = "" if metrics['cpu_utilization'] == best_cpu else ""
+            thr_arrow = "" if metrics['throughput'] == best_throughput else ""
             
             print(f"{result['algorithm']:<25} "
                   f"{metrics['avg_turnaround']:<16.2f}{turn_arrow:<2} "
@@ -118,18 +118,18 @@ class ResultsDisplay:
         system = metrics['system']
         
         if system['avg_waiting'] < 10:
-            print("✅ Este algoritmo muestra buen rendimiento con baja espera.")
+            print("Este algoritmo muestra buen rendimiento con baja espera.")
         elif system['avg_waiting'] < 20:
-            print("⚠️  Rendimiento aceptable, pero podría optimizarse.")
+            print("Rendimiento aceptable, pero podría optimizarse.")
         else:
-            print("❌ Alto tiempo de espera, considere otro algoritmo.")
+            print("Alto tiempo de espera, considere otro algoritmo.")
         
         if system['cpu_utilization'] > 80:
-            print("✅ Excelente utilización de CPU (>80%).")
+            print("Excelente utilización de CPU (>80%).")
         elif system['cpu_utilization'] > 60:
-            print("⚠️  Utilización de CPU moderada.")
+            print("Utilización de CPU moderada.")
         else:
-            print("❌ Baja utilización de CPU, considere optimizar.")
+            print("Baja utilización de CPU, considere optimizar.")
     
     def show_overall_recommendation(self, results):
         """Muestra recomendación general basada en comparativa"""
@@ -169,7 +169,7 @@ class ResultsDisplay:
         # Ordenar por mejor ranking
         rankings.sort(key=lambda x: x[1], reverse=True)
         
-        print(f"\n🏅 MEJOR ALGORITMO PARA ESTE CASO: {rankings[0][0]}")
+        print(f"\nMEJOR ALGORITMO PARA ESTE CASO: {rankings[0][0]}")
         print("Ranking de algoritmos:")
         
         for algo, score in rankings:
@@ -215,7 +215,7 @@ class ResultsDisplay:
             return
         
         print("\n" + "="*100)
-        print("📜 HISTORIAL DE SIMULACIONES")
+        print("HISTORIAL DE SIMULACIONES")
         print("="*100)
         
         for i, entry in enumerate(reversed(history[-10:]), 1):  # Mostrar últimas 10

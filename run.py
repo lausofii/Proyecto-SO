@@ -15,7 +15,7 @@ for folder in ["Core", "Core/algorithms", "UI", "Utils", "data"]:
     folder_path = os.path.join(current_dir, folder)
     if not os.path.exists(folder_path):
         os.makedirs(folder_path, exist_ok=True)
-        print(f"📁 Creado directorio: {folder_path}")
+        print(f"Creado directorio: {folder_path}")
 
 # Crear archivos __init__.py si no existen
 for folder in ["Core", "Core/algorithms", "UI", "Utils"]:
@@ -23,13 +23,13 @@ for folder in ["Core", "Core/algorithms", "UI", "Utils"]:
     if not os.path.exists(init_file):
         with open(init_file, 'w') as f:
             f.write('"""Paquete Python"""\n')
-        print(f"📄 Creado: {init_file}")
+        print(f"Creado: {init_file}")
 
-print(f"📂 Directorio de ejecución: {current_dir}")
+print(f"Directorio de ejecución: {current_dir}")
 
 # Intentar importar
 try:
-    print("\n🔍 Cargando módulos...")
+    print("\nCargando módulos...")
     from Core.scheduler import Scheduler
     from Core.process import Process
     from Core.metrics import MetricsCalculator
@@ -39,15 +39,15 @@ try:
     from Core.algorithms.priority import PriorityScheduler
     from UI.interface import CPUSchedulerInterface
     
-    print("✅ ✅ ✅ ¡TODOS LOS MÓDULOS CARGADOS! ✅ ✅ ✅")
+    print("TODOS LOS MÓDULOS CARGADOS!")
     
 except ImportError as e:
-    print(f"\n❌ Error de importación: {e}")
+    print(f"\nError de importación: {e}")
     input("\nPresiona Enter para salir...")
     sys.exit(1)
 
 # Si todo va bien, ejecutar
-print("\n🚀 INICIANDO SIMULADOR DE PLANIFICACIÓN DE CPU")
+print("\nINICIANDO SIMULADOR DE PLANIFICACIÓN DE CPU")
 print("="*70)
 
 try:

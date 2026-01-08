@@ -1,5 +1,6 @@
 """
 Punto de entrada principal del simulador de planificación de CPU
+Usa Textual para la interfaz gráfica de terminal
 """
 import sys
 import os
@@ -19,7 +20,6 @@ for dir_name in required_dirs:
     dir_path = os.path.join(BASE_DIR, dir_name)
     if not os.path.exists(dir_path):
         os.makedirs(dir_path, exist_ok=True)
-        print(f"📁 Creado directorio: {dir_path}")
 
 # Verificar archivos __init__.py
 for dir_name in ["Core", "UI", "Utils", "Core/algorithms"]:
@@ -27,16 +27,14 @@ for dir_name in ["Core", "UI", "Utils", "Core/algorithms"]:
     if not os.path.exists(init_file):
         with open(init_file, 'w') as f:
             f.write('"""Paquete Python"""\n')
-        print(f"📄 Creado: {init_file}")
-
-print(f"📂 Directorio base: {BASE_DIR}")
 
 # Intentar importar
 try:
-    from UI.interface import CPUSchedulerInterface
-    print("✅ Módulos importados correctamente")
+    from UI.textual_interface import CPUSchedulerApp
 except ImportError as e:
     print(f"❌ Error de importación: {e}")
+    print("\n📦 Asegúrese de instalar las dependencias:")
+    print("   pip install -r requirements.txt")
     print("\n📁 Verificando estructura de archivos...")
     
     # Listar archivos .py
@@ -55,26 +53,26 @@ except ImportError as e:
 def main():
     """Función principal"""
     try:
-        print("="*70)
-        print("SIMULADOR DE ALGORITMOS DE PLANIFICACIÓN DE CPU")
-        print("Universidad Católica Andrés Bello")
-        print("Facultad de Ingeniería - Escuela de Informática")
-        print("Equipo 7: Maria, Laura, Andrea")
-        print("="*70)
-        
         # Crear directorios necesarios
         os.makedirs("data", exist_ok=True)
         
-        # Iniciar interfaz
-        interface = CPUSchedulerInterface()
-        interface.main_menu()
+        # Guardar referencias originales de stdout/stderr antes de que Textual los capture
+        original_stdout = sys.stdout
+        original_stderr = sys.stderr
+        
+        # Iniciar aplicación Textual
+        app = CPUSchedulerApp()
+        # Restaurar stdout/stderr originales para logging
+        sys.stdout = original_stdout
+        sys.stderr = original_stderr
+        app.run()
         
     except KeyboardInterrupt:
-        print("\n\nSimulador terminado por el usuario.")
+        print("\n\nSimulador terminado por el usuario.", file=sys.__stdout__)
     except Exception as e:
-        print(f"\n❌ Error: {e}")
+        print(f"\n❌ Error: {e}", file=sys.__stderr__)
         import traceback
-        traceback.print_exc()
+        traceback.print_exc(file=sys.__stderr__)
         input("\nPresiona Enter para salir...")
 
 if __name__ == "__main__":
