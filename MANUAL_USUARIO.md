@@ -1,5 +1,4 @@
 # Manual de Usuario
-
 ## Simulador de Algoritmos de Planificación de CPU
 
 **Universidad Católica Andrés Bello**  
@@ -57,7 +56,6 @@ El **Simulador de Algoritmos de Planificación de CPU** es una herramienta educa
 ### Dependencias
 
 El simulador requiere las siguientes librerías de Python:
-
 - `textual` (versión 0.40 o superior)
 - `rich` (versión 13.0 o superior)
 
@@ -82,7 +80,6 @@ pip install -r requirements.txt
 ```
 
 Esto instalará automáticamente:
-
 - `textual` (framework para TUI)
 - `rich` (formato de texto enriquecido)
 
@@ -167,7 +164,6 @@ Al iniciar el programa, verá la **Pantalla Principal** que contiene:
 ### Navegación con Mouse
 
 Si su terminal lo soporta, también puede:
-
 - Hacer clic en los botones
 - Hacer clic en las filas de las tablas para seleccionarlas
 - Hacer scroll en las áreas desplazables
@@ -181,7 +177,6 @@ Si su terminal lo soporta, también puede:
 Permite cargar procesos desde archivos en formato JSON, CSV o TXT ubicados en la carpeta `data/`.
 
 **Pasos:**
-
 1. Desde el menú principal, seleccione **"1. Cargar procesos desde archivo"**
 2. Se abrirá una pantalla que muestra:
    - Una tabla con los archivos disponibles en `data/`
@@ -200,7 +195,6 @@ Permite cargar procesos desde archivos en formato JSON, CSV o TXT ubicados en la
 Permite ingresar procesos uno por uno especificando sus características.
 
 **Pasos:**
-
 1. Desde el menú principal, seleccione **"2. Crear procesos manualmente"**
 2. Complete el formulario:
    - **PID**: Identificador del proceso (ej: P1, P2, Proceso1)
@@ -220,7 +214,6 @@ Permite ingresar procesos uno por uno especificando sus características.
 Incluye tres conjuntos de prueba predefinidos y la opción de generar procesos aleatorios.
 
 **Pasos:**
-
 1. Desde el menú principal, seleccione **"3. Usar casos de prueba predefinidos"**
 2. Se mostrarán 4 opciones:
    - **Conjunto 1**: Procesos Básicos (4 procesos)
@@ -242,7 +235,6 @@ Incluye tres conjuntos de prueba predefinidos y la opción de generar procesos a
 Ejecuta una simulación con un algoritmo específico y muestra los resultados detallados.
 
 **Pasos:**
-
 1. **Asegúrese de tener procesos cargados** (si no hay, verá una advertencia)
 2. Desde el menú principal, seleccione **"4. Ejecutar simulación"**
 3. Se mostrará una pantalla con los 5 algoritmos disponibles:
@@ -271,7 +263,6 @@ Ejecuta una simulación con un algoritmo específico y muestra los resultados de
 Ejecuta todos los algoritmos con los mismos procesos y muestra una tabla comparativa.
 
 **Pasos:**
-
 1. **Asegúrese de tener procesos cargados**
 2. Desde el menú principal, seleccione **"5. Comparar todos los algoritmos"**
 3. Se mostrará una pantalla con:
@@ -288,7 +279,6 @@ Ejecuta todos los algoritmos con los mismos procesos y muestra una tabla compara
 8. Use **"Volver"** para regresar
 
 **Interpretación de la Comparativa:**
-
 - **Menores valores** en tiempos (retorno, espera, respuesta) = mejor rendimiento
 - **Mayores valores** en CPU utilización y throughput = mejor rendimiento
 - Los algoritmos con ⭐ tienen el mejor valor en esa métrica
@@ -298,7 +288,6 @@ Ejecuta todos los algoritmos con los mismos procesos y muestra una tabla compara
 Muestra las últimas 10 simulaciones realizadas.
 
 **Pasos:**
-
 1. Desde el menú principal, seleccione **"6. Ver historial de resultados"**
 2. Se mostrará una tabla con las últimas 10 simulaciones, incluyendo:
    - **#**: Número de simulación
@@ -317,7 +306,6 @@ Muestra las últimas 10 simulaciones realizadas.
 Permite configurar parámetros por defecto del sistema.
 
 **Pasos:**
-
 1. Desde el menú principal, seleccione **"7. Configurar parámetros"**
 2. Se mostrarán opciones para:
    - **Quantum por defecto para Round Robin**:
@@ -336,25 +324,21 @@ Permite configurar parámetros por defecto del sistema.
 ### Ejemplo 1: Simulación Básica con FCFS
 
 1. **Iniciar el programa**:
-
    ```bash
    python main.py
    ```
 
 2. **Cargar procesos**:
-
    - Haga clic en **"3. Usar casos de prueba predefinidos"**
    - Seleccione **"1. Conjunto 1: Procesos Básicos"**
    - Verá una notificación de confirmación
 
 3. **Ejecutar simulación**:
-
    - Haga clic en **"4. Ejecutar simulación"**
    - Seleccione **"1. FCFS (First Come First Served)"**
    - La simulación se ejecutará automáticamente
 
 4. **Ver resultados**:
-
    - Revise el **Diagrama de Gantt** para ver el orden de ejecución
    - Examine la **Tabla de Métricas por Proceso**
    - Revise las **Métricas del Sistema**
@@ -365,17 +349,14 @@ Permite configurar parámetros por defecto del sistema.
 ### Ejemplo 2: Comparación de Algoritmos
 
 1. **Cargar procesos**:
-
    - Use **"3. Usar casos de prueba predefinidos"** → **"Conjunto 2"**
 
 2. **Comparar algoritmos**:
-
    - Haga clic en **"5. Comparar todos los algoritmos"**
    - Ingrese el quantum para Round Robin (ej: 4) o deje el valor por defecto
    - Haga clic en **"Ejecutar comparativa"**
 
 3. **Analizar resultados**:
-
    - Revise la tabla comparativa
    - Identifique qué algoritmo tiene más estrellas (⭐)
    - Lea la recomendación al final
@@ -389,26 +370,21 @@ Permite configurar parámetros por defecto del sistema.
 ### Ejemplo 3: Cargar desde Archivo Personalizado
 
 1. **Preparar archivo**:
-
    - Cree un archivo JSON en la carpeta `data/` con el formato:
-
    ```json
    [
-     { "pid": "P1", "arrival_time": 0, "burst_time": 5, "priority": 1 },
-     { "pid": "P2", "arrival_time": 2, "burst_time": 3, "priority": 2 }
+     {"pid": "P1", "arrival_time": 0, "burst_time": 5, "priority": 1},
+     {"pid": "P2", "arrival_time": 2, "burst_time": 3, "priority": 2}
    ]
    ```
-
    - Guarde el archivo como `mi_conjunto.json` en la carpeta `data/`
 
 2. **Cargar archivo**:
-
    - Haga clic en **"1. Cargar procesos desde archivo"**
    - Seleccione el archivo de la tabla o escriba `mi_conjunto.json`
    - Haga clic en **"Cargar"**
 
 3. **Verificar carga**:
-
    - Verá una notificación de confirmación
    - La tabla de procesos en el menú principal mostrará los procesos cargados
 
@@ -418,11 +394,9 @@ Permite configurar parámetros por defecto del sistema.
 ### Ejemplo 4: Crear Procesos Personalizados
 
 1. **Abrir editor de procesos**:
-
    - Haga clic en **"2. Crear procesos manualmente"**
 
 2. **Agregar procesos**:
-
    - Complete el formulario para cada proceso:
      - PID: `MiProceso1`
      - Tiempo de llegada: `0`
@@ -432,7 +406,6 @@ Permite configurar parámetros por defecto del sistema.
    - Repita para más procesos
 
 3. **Gestionar procesos**:
-
    - Para eliminar: Seleccione el proceso en la tabla y presione Enter
    - Para limpiar el formulario: Haga clic en **"Limpiar"**
 
@@ -462,12 +435,40 @@ Permite configurar parámetros por defecto del sistema.
 ]
 ```
 
+### Formato CSV
+
+```csv
+PID,Arrival_Time,Burst_Time,Priority
+P1,0,8,3
+P2,1,4,1
+P3,2,9,4
+P4,3,5,2
+```
+
+### Formato TXT (con espacios o tabs)
+
+```
+P1 0 8 3
+P2 1 4 1
+P3 2 9 4
+P4 3 5 2
+```
+
+O con tabs:
+
+```
+P1	0	8	3
+P2	1	4	1
+```
+
 ### Campos Requeridos
 
 - **pid**: Identificador único del proceso (texto, ej: "P1", "Proceso1")
 - **arrival_time**: Tiempo de llegada (entero ≥ 0)
 - **burst_time**: Tiempo de ráfaga de CPU (entero > 0)
 - **priority**: Prioridad del proceso (entero, menor número = mayor prioridad)
+
+**Nota**: En CSV y TXT, si falta la prioridad, se asume 1 por defecto.
 
 ---
 
@@ -478,7 +479,6 @@ Permite configurar parámetros por defecto del sistema.
 Cuando ejecuta una simulación individual, verá:
 
 #### Información General
-
 - **Algoritmo**: Nombre del algoritmo utilizado
 - **Tiempo total**: Tiempo total de simulación
 - **Procesos completados**: Cantidad de procesos que terminaron
@@ -486,7 +486,6 @@ Cuando ejecuta una simulación individual, verá:
 #### Diagrama de Gantt
 
 Muestra visualmente el orden de ejecución:
-
 - Cada bloque representa un proceso ejecutándose
 - Los números debajo indican los tiempos acumulados
 - Permite ver el orden de ejecución y los cambios de contexto
@@ -495,7 +494,6 @@ Muestra visualmente el orden de ejecución:
 #### Métricas por Proceso
 
 Tabla que muestra para cada proceso:
-
 - **PID**: Identificador del proceso
 - **Llegada**: Tiempo en que el proceso llegó al sistema
 - **Ráfaga**: Tiempo de CPU requerido
@@ -523,7 +521,6 @@ En la comparativa de algoritmos:
 - **Ranking**: Puntuación de cada algoritmo (mayor es mejor)
 
 **Cómo interpretar**:
-
 1. Busque los algoritmos con más estrellas (⭐)
 2. Compare los valores numéricos
 3. Considere el contexto: ¿Qué métrica es más importante para su caso?
@@ -538,7 +535,6 @@ En la comparativa de algoritmos:
 **Síntomas**: El programa no inicia y muestra un error de importación.
 
 **Solución**:
-
 1. Verifique que las dependencias estén instaladas:
    ```bash
    pip install -r requirements.txt
@@ -554,7 +550,6 @@ En la comparativa de algoritmos:
 **Síntomas**: Al intentar ejecutar una simulación, aparece una advertencia.
 
 **Solución**:
-
 - Use **"3. Usar casos de prueba predefinidos"** para cargar procesos de prueba
 - O cargue un archivo desde **"1. Cargar procesos desde archivo"**
 - O cree procesos manualmente con **"2. Crear procesos manualmente"**
@@ -564,7 +559,6 @@ En la comparativa de algoritmos:
 **Síntomas**: Al intentar cargar un archivo, aparece un error.
 
 **Solución**:
-
 1. Verifique que el archivo esté en la carpeta `data/`
 2. Verifique que el nombre del archivo sea correcto (incluyendo extensión: `.json`, `.csv`, o `.txt`)
 3. Verifique el formato del archivo según la sección [Formato de Archivos](#9-formato-de-archivos)
@@ -575,7 +569,6 @@ En la comparativa de algoritmos:
 **Síntomas**: Al intentar agregar un proceso, aparece un error.
 
 **Solución**:
-
 - Asegúrese de que los tiempos sean números enteros positivos
 - El PID no puede estar vacío
 - Verifique que todos los campos estén completos
@@ -586,7 +579,6 @@ En la comparativa de algoritmos:
 **Síntomas**: La interfaz se ve distorsionada o no se renderiza bien.
 
 **Solución**:
-
 1. Use una terminal moderna compatible:
    - **Windows**: Windows Terminal (recomendado) o PowerShell
    - **Linux**: Terminal moderno (gnome-terminal, konsole, etc.)
@@ -600,7 +592,6 @@ En la comparativa de algoritmos:
 **Síntomas**: El historial está vacío o no se actualiza.
 
 **Solución**:
-
 1. Verifique que exista la carpeta `data/`
 2. Verifique permisos de escritura en el directorio
 3. Asegúrese de que el archivo `data/simulation_history.json` no esté bloqueado
@@ -611,7 +602,6 @@ En la comparativa de algoritmos:
 **Síntomas**: Las teclas no responden o la navegación no funciona.
 
 **Solución**:
-
 1. Use **Tab** para navegar entre elementos
 2. Use **Flechas** para navegar en tablas y listas
 3. Use **Enter** para activar botones o seleccionar elementos
@@ -623,7 +613,6 @@ En la comparativa de algoritmos:
 **Síntomas**: El diagrama de Gantt no se muestra correctamente.
 
 **Solución**:
-
 1. Asegúrese de que su terminal soporte caracteres Unicode (┌, ─, ┐, │, └, ┘)
 2. Use una fuente que soporte estos caracteres (como Consolas, Courier New, o fuentes monospace modernas)
 3. Si el problema persiste, los datos numéricos en la tabla de resultados son igualmente válidos
@@ -633,7 +622,6 @@ En la comparativa de algoritmos:
 **Síntomas**: La simulación parece congelarse.
 
 **Solución**:
-
 - Esto es normal para conjuntos grandes de procesos
 - El sistema está ejecutando la simulación en segundo plano
 - Espere a que aparezca la pantalla de resultados
@@ -644,7 +632,6 @@ En la comparativa de algoritmos:
 ## Apéndice A: Algoritmos Implementados
 
 ### FCFS (First Come First Served)
-
 - **Tipo**: No apropiativo
 - **Criterio**: Orden de llegada (primero en llegar, primero en ser servido)
 - **Ventajas**: Simple, sin inanición, fácil de implementar
@@ -652,7 +639,6 @@ En la comparativa de algoritmos:
 - **Mejor para**: Sistemas simples, procesos con tiempos similares
 
 ### SJF (Shortest Job First)
-
 - **Tipo**: No apropiativo
 - **Criterio**: Menor tiempo de ráfaga primero
 - **Ventajas**: Minimiza tiempo de espera promedio, óptimo para minimizar tiempo de retorno promedio
@@ -660,7 +646,6 @@ En la comparativa de algoritmos:
 - **Mejor para**: Sistemas batch, cuando se conocen los tiempos de ejecución
 
 ### Round Robin
-
 - **Tipo**: Apropiativo
 - **Criterio**: Quantum fijo, rotación circular
 - **Ventajas**: Justo, buen tiempo de respuesta, no causa inanición
@@ -669,7 +654,6 @@ En la comparativa de algoritmos:
 - **Parámetro**: Quantum (tiempo que cada proceso ejecuta antes de ser desalojado)
 
 ### Prioridades (sin desalojo)
-
 - **Tipo**: No apropiativo
 - **Criterio**: Mayor prioridad primero (menor número = mayor prioridad)
 - **Ventajas**: Permite priorizar procesos importantes, simple
@@ -677,7 +661,6 @@ En la comparativa de algoritmos:
 - **Mejor para**: Sistemas donde algunos procesos son más críticos
 
 ### Prioridades (con desalojo)
-
 - **Tipo**: Apropiativo
 - **Criterio**: Mayor prioridad, con interrupción cuando llega un proceso de mayor prioridad
 - **Ventajas**: Respuesta rápida a procesos de alta prioridad, más justo que sin desalojo
@@ -689,18 +672,16 @@ En la comparativa de algoritmos:
 ## Apéndice B: Ejemplos de Archivos
 
 ### ejemplo1.json
-
 ```json
 [
-  { "pid": "P1", "arrival_time": 0, "burst_time": 8, "priority": 3 },
-  { "pid": "P2", "arrival_time": 1, "burst_time": 4, "priority": 1 },
-  { "pid": "P3", "arrival_time": 2, "burst_time": 9, "priority": 4 },
-  { "pid": "P4", "arrival_time": 3, "burst_time": 5, "priority": 2 }
+  {"pid": "P1", "arrival_time": 0, "burst_time": 8, "priority": 3},
+  {"pid": "P2", "arrival_time": 1, "burst_time": 4, "priority": 1},
+  {"pid": "P3", "arrival_time": 2, "burst_time": 9, "priority": 4},
+  {"pid": "P4", "arrival_time": 3, "burst_time": 5, "priority": 2}
 ]
 ```
 
 ### ejemplo2.csv
-
 ```csv
 PID,Arrival_Time,Burst_Time,Priority
 P1,0,10,2
@@ -711,7 +692,6 @@ P5,8,4,2
 ```
 
 ### ejemplo3.txt
-
 ```
 P1 0 7 1
 P2 2 4 3
@@ -726,7 +706,6 @@ P6 8 6 2
 ## Contacto y Soporte
 
 **Equipo 7:**
-
 - Maria Marin (30.709.208)
 - Laura Martínez (30.346.546)
 - Andrea Gamarra (28.492.138)
@@ -746,4 +725,4 @@ P6 8 6 2
 
 ---
 
-_Este manual fue generado para el proyecto de Sistemas Operativos de la Universidad Católica Andrés Bello. La interfaz utiliza Textual, un framework moderno para aplicaciones de terminal interactivas._
+*Este manual fue generado para el proyecto de Sistemas Operativos de la Universidad Católica Andrés Bello. La interfaz utiliza Textual, un framework moderno para aplicaciones de terminal interactivas.*
